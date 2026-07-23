@@ -1,0 +1,107 @@
+{
+    "dskditto": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "dskditto",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "jdefrancesco",
+            "repo": "dskDitto",
+            "rev": "v0.5.6",
+            "sha256": "sha256-6p4BK6MhPhkU0NNeRIqe2KxTLtvIf43IrZ+zx11kjXk=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.5.6"
+    },
+    "flyline": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "flyline",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "HalFrgrd",
+            "repo": "flyline",
+            "rev": "v1.3.0",
+            "sha256": "sha256-KciBcUsoMCGuw8bHlVBDHAB55lDfyeGoJxBldmj0MVs=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.3.0"
+    },
+    "lazyrsync": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "lazyrsync",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "westpoint-io",
+            "repo": "lazyrsync",
+            "rev": "v0.1.1",
+            "sha256": "sha256-JBELPmNSaiwxHq9iZHvvrCX/YLSBsOO3OrzXJ0mPrNw=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.1.1"
+    },
+    "usbtree": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "usbtree",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "gnomeria",
+            "repo": "usbtree",
+            "rev": "v0.1.0",
+            "sha256": "sha256-52Ppiv2bYLJR4/h0gyxfBtRnyCQkfNBmCNyr5hWe3uY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.1.0"
+    },
+    "whosthere": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "whosthere",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "ramonvermeulen",
+            "repo": "whosthere",
+            "rev": "v0.8.3",
+            "sha256": "sha256-Q/ztOqaGONMZKQwTpwyr8/ThZxDfQVLPXHrjk1IMWsU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.8.3"
+    }
+}

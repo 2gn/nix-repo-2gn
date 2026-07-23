@@ -1,0 +1,20 @@
+[lazyrsync]
+src.github = "westpoint-io/lazyrsync"
+fetch.github = "westpoint-io/lazyrsync"
+
+[usbtree]
+src.github = "gnomeria/usbtree"
+fetch.github = "gnomeria/usbtree"
+
+[flyline]
+src.github = "HalFrgrd/flyline"
+fetch.github = "HalFrgrd/flyline"
+
+[dskditto]
+src.github = "jdefrancesco/dskDitto"
+fetch.github = "jdefrancesco/dskDitto"
+
+[whosthere]
+src.github = "ramonvermeulen/whosthere"
+fetch.github = "ramonvermeulen/whosthere"
+
