@@ -18,3 +18,6 @@ fetch.github = "jdefrancesco/dskDitto"
 src.github = "ramonvermeulen/whosthere"
 fetch.github = "ramonvermeulen/whosthere"
 
+[flow]
+src.github = "programmersd21/flow"
+fetch.github = "programmersd21/flow"

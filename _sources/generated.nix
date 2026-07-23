@@ -17,6 +17,17 @@
       sha256 = "sha256-6p4BK6MhPhkU0NNeRIqe2KxTLtvIf43IrZ+zx11kjXk=";
     };
   };
+  flow = {
+    pname = "flow";
+    version = "v0.2.1";
+    src = fetchFromGitHub {
+      owner = "programmersd21";
+      repo = "flow";
+      rev = "v0.2.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-ZwWuFAPPHF+Q2ziXoT7yCPU6WVkAcbpnlZjXKQ/bqy0=";
+    };
+  };
   flyline = {
     pname = "flyline";
     version = "v1.3.0";
