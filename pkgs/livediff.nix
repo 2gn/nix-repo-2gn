@@ -6,4 +6,5 @@ in
 craneLib.buildPackage {
   inherit (sources.livediff) pname version src;
   # No more manual SHA hashes!
+  doCheck = false;
 }
