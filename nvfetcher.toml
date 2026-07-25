@@ -14,10 +14,18 @@ fetch.github = "HalFrgrd/flyline"
 src.github = "jdefrancesco/dskDitto"
 fetch.github = "jdefrancesco/dskDitto"
 
-[whosthere]
-src.github = "ramonvermeulen/whosthere"
-fetch.github = "ramonvermeulen/whosthere"
-
 [flow]
 src.github = "programmersd21/flow"
 fetch.github = "programmersd21/flow"
+
+[keyward]
+src.github = "gateway-of-last-resort/keyward"
+fetch.github = "gateway-of-last-resort/keyward"
+
+[codemark]
+src.github = "DanielCardonaRojas/codemark"
+fetch.github = "DanielCardonaRojas/codemark"
+
+[livediff]
+src.github = "SoCkEt7/livediff"
+fetch.github = "SoCkEt7/livediff"

@@ -1,4 +1,25 @@
 {
+    "codemark": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "codemark",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "DanielCardonaRojas",
+            "repo": "codemark",
+            "rev": "0.7.25",
+            "sha256": "sha256-gX11XPwJEAqHe2Dyec1yAweO+s85tiE6v+9dkqFT3wc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "0.7.25"
+    },
     "dskditto": {
         "cargoLock": null,
         "date": null,
@@ -13,12 +34,12 @@
             "name": null,
             "owner": "jdefrancesco",
             "repo": "dskDitto",
-            "rev": "v0.5.6",
-            "sha256": "sha256-6p4BK6MhPhkU0NNeRIqe2KxTLtvIf43IrZ+zx11kjXk=",
+            "rev": "v0.5.9",
+            "sha256": "sha256-BsVcxGnFVa10OcybdhC6u9EkGwumejeddaymXNivmbg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.5.6"
+        "version": "v0.5.9"
     },
     "flow": {
         "cargoLock": null,
@@ -62,6 +83,27 @@
         },
         "version": "v1.3.0"
     },
+    "keyward": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "keyward",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "gateway-of-last-resort",
+            "repo": "keyward",
+            "rev": "v1.0.1",
+            "sha256": "sha256-oHJ4dh5H3xjdKH0NsOry9TSzuURM9R80hw+AKZWfwMc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.0.1"
+    },
     "lazyrsync": {
         "cargoLock": null,
         "date": null,
@@ -83,6 +125,27 @@
         },
         "version": "v0.1.1"
     },
+    "livediff": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "livediff",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "SoCkEt7",
+            "repo": "livediff",
+            "rev": "v3.2.0",
+            "sha256": "sha256-KVxAGNam4S9ctwbvUR8eKzzFIDL7KPi+EmzZt0hrJuc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v3.2.0"
+    },
     "usbtree": {
         "cargoLock": null,
         "date": null,
@@ -103,26 +166,5 @@
             "type": "github"
         },
         "version": "v0.1.0"
-    },
-    "whosthere": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "whosthere",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "ramonvermeulen",
-            "repo": "whosthere",
-            "rev": "v0.8.3",
-            "sha256": "sha256-Q/ztOqaGONMZKQwTpwyr8/ThZxDfQVLPXHrjk1IMWsU=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "v0.8.3"
     }
 }

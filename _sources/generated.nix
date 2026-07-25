@@ -6,15 +6,26 @@
   dockerTools,
 }:
 {
+  codemark = {
+    pname = "codemark";
+    version = "0.7.25";
+    src = fetchFromGitHub {
+      owner = "DanielCardonaRojas";
+      repo = "codemark";
+      rev = "0.7.25";
+      fetchSubmodules = false;
+      sha256 = "sha256-gX11XPwJEAqHe2Dyec1yAweO+s85tiE6v+9dkqFT3wc=";
+    };
+  };
   dskditto = {
     pname = "dskditto";
-    version = "v0.5.6";
+    version = "v0.5.9";
     src = fetchFromGitHub {
       owner = "jdefrancesco";
       repo = "dskDitto";
-      rev = "v0.5.6";
+      rev = "v0.5.9";
       fetchSubmodules = false;
-      sha256 = "sha256-6p4BK6MhPhkU0NNeRIqe2KxTLtvIf43IrZ+zx11kjXk=";
+      sha256 = "sha256-BsVcxGnFVa10OcybdhC6u9EkGwumejeddaymXNivmbg=";
     };
   };
   flow = {
@@ -39,6 +50,17 @@
       sha256 = "sha256-KciBcUsoMCGuw8bHlVBDHAB55lDfyeGoJxBldmj0MVs=";
     };
   };
+  keyward = {
+    pname = "keyward";
+    version = "v1.0.1";
+    src = fetchFromGitHub {
+      owner = "gateway-of-last-resort";
+      repo = "keyward";
+      rev = "v1.0.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-oHJ4dh5H3xjdKH0NsOry9TSzuURM9R80hw+AKZWfwMc=";
+    };
+  };
   lazyrsync = {
     pname = "lazyrsync";
     version = "v0.1.1";
@@ -50,6 +72,17 @@
       sha256 = "sha256-JBELPmNSaiwxHq9iZHvvrCX/YLSBsOO3OrzXJ0mPrNw=";
     };
   };
+  livediff = {
+    pname = "livediff";
+    version = "v3.2.0";
+    src = fetchFromGitHub {
+      owner = "SoCkEt7";
+      repo = "livediff";
+      rev = "v3.2.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-KVxAGNam4S9ctwbvUR8eKzzFIDL7KPi+EmzZt0hrJuc=";
+    };
+  };
   usbtree = {
     pname = "usbtree";
     version = "v0.1.0";
@@ -59,17 +92,6 @@
       rev = "v0.1.0";
       fetchSubmodules = false;
       sha256 = "sha256-52Ppiv2bYLJR4/h0gyxfBtRnyCQkfNBmCNyr5hWe3uY=";
-    };
-  };
-  whosthere = {
-    pname = "whosthere";
-    version = "v0.8.3";
-    src = fetchFromGitHub {
-      owner = "ramonvermeulen";
-      repo = "whosthere";
-      rev = "v0.8.3";
-      fetchSubmodules = false;
-      sha256 = "sha256-Q/ztOqaGONMZKQwTpwyr8/ThZxDfQVLPXHrjk1IMWsU=";
     };
   };
 }
