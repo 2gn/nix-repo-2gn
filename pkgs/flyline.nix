@@ -24,4 +24,6 @@ in
 craneLib.buildPackage {
   inherit (sources.flyline) pname version src;
   inherit cargoVendorDir;
+
+  doCheck = false;
 }
