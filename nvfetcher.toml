@@ -33,3 +33,7 @@ fetch.github = "SoCkEt7/livediff"
 [gotz]
 src.github = "merschformann/gotz"
 fetch.github = "merschformann/gotz"
+
+[haranoaji]
+src.github_tag = "trueroad/HaranoAjiFonts"
+fetch.github = "trueroad/HaranoAjiFonts"

@@ -104,6 +104,27 @@
         },
         "version": "v0.1.15"
     },
+    "haranoaji": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "haranoaji",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "trueroad",
+            "repo": "HaranoAjiFonts",
+            "rev": "20250811",
+            "sha256": "sha256-V9T+V+vCNMYMf5xe/EO4n2tyQb23Q1cnkmy259iuQLk=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "20250811"
+    },
     "keyward": {
         "cargoLock": null,
         "date": null,

@@ -61,6 +61,17 @@
       sha256 = "sha256-U/JJBb5Z64sv7LR2ugeFOidNSOUblzWp1xzrTiG7mQc=";
     };
   };
+  haranoaji = {
+    pname = "haranoaji";
+    version = "20250811";
+    src = fetchFromGitHub {
+      owner = "trueroad";
+      repo = "HaranoAjiFonts";
+      rev = "20250811";
+      fetchSubmodules = false;
+      sha256 = "sha256-V9T+V+vCNMYMf5xe/EO4n2tyQb23Q1cnkmy259iuQLk=";
+    };
+  };
   keyward = {
     pname = "keyward";
     version = "v1.0.1";
