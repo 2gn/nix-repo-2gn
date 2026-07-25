@@ -50,6 +50,17 @@
       sha256 = "sha256-KciBcUsoMCGuw8bHlVBDHAB55lDfyeGoJxBldmj0MVs=";
     };
   };
+  gotz = {
+    pname = "gotz";
+    version = "v0.1.15";
+    src = fetchFromGitHub {
+      owner = "merschformann";
+      repo = "gotz";
+      rev = "v0.1.15";
+      fetchSubmodules = false;
+      sha256 = "sha256-U/JJBb5Z64sv7LR2ugeFOidNSOUblzWp1xzrTiG7mQc=";
+    };
+  };
   keyward = {
     pname = "keyward";
     version = "v1.0.1";
