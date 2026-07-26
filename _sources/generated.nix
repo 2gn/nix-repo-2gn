@@ -6,6 +6,25 @@
   dockerTools,
 }:
 {
+  astroterm = {
+    pname = "astroterm";
+    version = "v1.2.0";
+    src = fetchurl {
+      url = "https://github.com/da-luce/astroterm/releases/download/v1.2.0/astroterm-linux-x86_64";
+      sha256 = "sha256-V6VCvTfQEzel39hYIBWnbJlJwKUU5LkzXgwapERFs98=";
+    };
+  };
+  bbcli = {
+    pname = "bbcli";
+    version = "1.0.3";
+    src = fetchFromGitHub {
+      owner = "hako";
+      repo = "bbcli";
+      rev = "1.0.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-b5wM18765fe9unz3v1uzTbSFOsvjNq5aIqhtrzz98mg=";
+    };
+  };
   codemark = {
     pname = "codemark";
     version = "0.7.25";
@@ -72,6 +91,17 @@
       sha256 = "sha256-V9T+V+vCNMYMf5xe/EO4n2tyQb23Q1cnkmy259iuQLk=";
     };
   };
+  herald = {
+    pname = "herald";
+    version = "v0.7.5-beta.1";
+    src = fetchFromGitHub {
+      owner = "herald-email";
+      repo = "herald-mail-app";
+      rev = "v0.7.5-beta.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-O24TgRxiIxTXXyCs7H2VU6C5ZYNowZMBK0KYlPs6IWc=";
+    };
+  };
   keyward = {
     pname = "keyward";
     version = "v1.0.1";
@@ -81,6 +111,17 @@
       rev = "v1.0.1";
       fetchSubmodules = false;
       sha256 = "sha256-oHJ4dh5H3xjdKH0NsOry9TSzuURM9R80hw+AKZWfwMc=";
+    };
+  };
+  lazycut = {
+    pname = "lazycut";
+    version = "v0.3.9";
+    src = fetchFromGitHub {
+      owner = "emin-ozata";
+      repo = "lazycut";
+      rev = "v0.3.9";
+      fetchSubmodules = false;
+      sha256 = "sha256-SWcxk8GiXX81UZwv//1lukvXLtgMiJ7u4Rx1z6CKQoY=";
     };
   };
   lazyrsync = {
@@ -103,6 +144,75 @@
       rev = "v3.2.0";
       fetchSubmodules = false;
       sha256 = "sha256-KVxAGNam4S9ctwbvUR8eKzzFIDL7KPi+EmzZt0hrJuc=";
+    };
+  };
+  omm = {
+    pname = "omm";
+    version = "v0.7.0";
+    src = fetchFromGitHub {
+      owner = "dhth";
+      repo = "omm";
+      rev = "v0.7.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-aKsJWBZniUBPQaQOrTZtHePapKSAOiVwlmHhJQ1SHb8=";
+    };
+  };
+  pwdsafety = {
+    pname = "pwdsafety";
+    version = "v0.4.2";
+    src = fetchFromGitHub {
+      owner = "edoardottt";
+      repo = "pwdsafety";
+      rev = "v0.4.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-/kLnlOJu+G+RDVhjH+zsXzF2PdFhqu8ZOz72wqbuixU=";
+    };
+  };
+  redthread = {
+    pname = "redthread";
+    version = "d8f46dd5486911bfaae1904737b32e8db8efbf33";
+    src = fetchgit {
+      url = "https://github.com/B33pBeeps/redthread";
+      rev = "d8f46dd5486911bfaae1904737b32e8db8efbf33";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-nGE20xjMS4cGVIkHHULnMJKgZ5vVZtdpZGQxMPX3g3Q=";
+    };
+    date = "2026-06-17";
+  };
+  resterm = {
+    pname = "resterm";
+    version = "v0.47.3";
+    src = fetchFromGitHub {
+      owner = "unkn0wn-root";
+      repo = "resterm";
+      rev = "v0.47.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-MV5b2IS1j9BZ6dOkXSu0/n9LiQfGSSsz4b2QXdkUWh4=";
+    };
+  };
+  rura = {
+    pname = "rura";
+    version = "v1.10.0";
+    src = fetchFromGitHub {
+      owner = "tlipinski";
+      repo = "rura";
+      rev = "v1.10.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-yxYTBXGFX2PdtzgYexnXyjNMcDTnfwsy2s8S0y4hp+M=";
+    };
+  };
+  sheets = {
+    pname = "sheets";
+    version = "v0.3.0";
+    src = fetchFromGitHub {
+      owner = "maaslalani";
+      repo = "sheets";
+      rev = "v0.3.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-xDu+jbWH7ubXC6ImvkRVgPI0OHAaUQ60sELDJN8hY1M=";
     };
   };
   usbtree = {

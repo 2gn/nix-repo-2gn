@@ -1,4 +1,40 @@
 {
+    "astroterm": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "astroterm",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-V6VCvTfQEzel39hYIBWnbJlJwKUU5LkzXgwapERFs98=",
+            "type": "url",
+            "url": "https://github.com/da-luce/astroterm/releases/download/v1.2.0/astroterm-linux-x86_64"
+        },
+        "version": "v1.2.0"
+    },
+    "bbcli": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "bbcli",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "hako",
+            "repo": "bbcli",
+            "rev": "1.0.3",
+            "sha256": "sha256-b5wM18765fe9unz3v1uzTbSFOsvjNq5aIqhtrzz98mg=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "1.0.3"
+    },
     "codemark": {
         "cargoLock": null,
         "date": null,
@@ -125,6 +161,27 @@
         },
         "version": "20250811"
     },
+    "herald": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "herald",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "herald-email",
+            "repo": "herald-mail-app",
+            "rev": "v0.7.5-beta.1",
+            "sha256": "sha256-O24TgRxiIxTXXyCs7H2VU6C5ZYNowZMBK0KYlPs6IWc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.7.5-beta.1"
+    },
     "keyward": {
         "cargoLock": null,
         "date": null,
@@ -145,6 +202,27 @@
             "type": "github"
         },
         "version": "v1.0.1"
+    },
+    "lazycut": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "lazycut",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "emin-ozata",
+            "repo": "lazycut",
+            "rev": "v0.3.9",
+            "sha256": "sha256-SWcxk8GiXX81UZwv//1lukvXLtgMiJ7u4Rx1z6CKQoY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.3.9"
     },
     "lazyrsync": {
         "cargoLock": null,
@@ -187,6 +265,131 @@
             "type": "github"
         },
         "version": "v3.2.0"
+    },
+    "omm": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "omm",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "dhth",
+            "repo": "omm",
+            "rev": "v0.7.0",
+            "sha256": "sha256-aKsJWBZniUBPQaQOrTZtHePapKSAOiVwlmHhJQ1SHb8=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.7.0"
+    },
+    "pwdsafety": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "pwdsafety",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "edoardottt",
+            "repo": "pwdsafety",
+            "rev": "v0.4.2",
+            "sha256": "sha256-/kLnlOJu+G+RDVhjH+zsXzF2PdFhqu8ZOz72wqbuixU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.4.2"
+    },
+    "redthread": {
+        "cargoLock": null,
+        "date": "2026-06-17",
+        "extract": null,
+        "name": "redthread",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "d8f46dd5486911bfaae1904737b32e8db8efbf33",
+            "sha256": "sha256-nGE20xjMS4cGVIkHHULnMJKgZ5vVZtdpZGQxMPX3g3Q=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/B33pBeeps/redthread"
+        },
+        "version": "d8f46dd5486911bfaae1904737b32e8db8efbf33"
+    },
+    "resterm": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "resterm",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "unkn0wn-root",
+            "repo": "resterm",
+            "rev": "v0.47.3",
+            "sha256": "sha256-MV5b2IS1j9BZ6dOkXSu0/n9LiQfGSSsz4b2QXdkUWh4=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.47.3"
+    },
+    "rura": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "rura",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "tlipinski",
+            "repo": "rura",
+            "rev": "v1.10.0",
+            "sha256": "sha256-yxYTBXGFX2PdtzgYexnXyjNMcDTnfwsy2s8S0y4hp+M=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.10.0"
+    },
+    "sheets": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "sheets",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "maaslalani",
+            "repo": "sheets",
+            "rev": "v0.3.0",
+            "sha256": "sha256-xDu+jbWH7ubXC6ImvkRVgPI0OHAaUQ60sELDJN8hY1M=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.3.0"
     },
     "usbtree": {
         "cargoLock": null,

@@ -37,3 +37,44 @@ fetch.github = "merschformann/gotz"
 [haranoaji]
 src.github_tag = "trueroad/HaranoAjiFonts"
 fetch.github = "trueroad/HaranoAjiFonts"
+
+[herald]
+src.github_tag = "herald-email/herald-mail-app"
+fetch.github = "herald-email/herald-mail-app"
+
+[resterm]
+src.github = "unkn0wn-root/resterm"
+fetch.github = "unkn0wn-root/resterm"
+
+[astroterm]
+src.github = "da-luce/astroterm"
+fetch.url = "https://github.com/da-luce/astroterm/releases/download/$ver/astroterm-linux-x86_64"
+
+[lazycut]
+src.github = "emin-ozata/lazycut"
+fetch.github = "emin-ozata/lazycut"
+
+[redthread]
+src.git = "https://github.com/B33pBeeps/redthread"
+src.branch = "main"
+fetch.git = "https://github.com/B33pBeeps/redthread"
+
+[bbcli]
+src.github = "hako/bbcli"
+fetch.github = "hako/bbcli"
+
+[rura]
+src.github = "tlipinski/rura"
+fetch.github = "tlipinski/rura"
+
+[omm]
+src.github = "dhth/omm"
+fetch.github = "dhth/omm"
+
+[sheets]
+src.github = "maaslalani/sheets"
+fetch.github = "maaslalani/sheets"
+
+[pwdsafety]
+src.github = "edoardottt/pwdsafety"
+fetch.github = "edoardottt/pwdsafety"
