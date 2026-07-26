@@ -75,6 +75,38 @@ fetch.github = "dhth/omm"
 src.github = "maaslalani/sheets"
 fetch.github = "maaslalani/sheets"
 
+[flawz]
+src.github = "orhun/flawz"
+fetch.github = "orhun/flawz"
+
+[liboping]
+src.github_tag = "octo/liboping"
+fetch.github = "octo/liboping"
+
+[manly]
+src.github_tag = "whoop-t/manly"
+fetch.github = "whoop-t/manly"
+
+[bottom]
+src.github = "ClementTsang/bottom"
+fetch.github = "ClementTsang/bottom"
+
+[hulak]
+src.github = "xaaha/hulak"
+fetch.github = "xaaha/hulak"
+
+[mtr]
+src.github_tag = "traviscross/mtr"
+fetch.github = "traviscross/mtr"
+
+[uuinfo]
+src.github = "Racum/uuinfo"
+fetch.github = "Racum/uuinfo"
+
+[sot]
+src.github = "anistark/sot"
+fetch.github = "anistark/sot"
+
 [pwdsafety]
 src.github = "edoardottt/pwdsafety"
 fetch.github = "edoardottt/pwdsafety"

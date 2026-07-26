@@ -5,7 +5,7 @@ in
 buildGoModule {
   inherit (sources.pwdsafety) pname version src;
 
-  vendorHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+  vendorHash = "sha256-4Nd4QU934XpCOH6aqiGLvRbfuPu+z4WwzxBIb/SPH8w=";
 
   subPackages = [ "./cmd/pwdsafety" ];
 }

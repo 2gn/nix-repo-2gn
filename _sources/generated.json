@@ -49,12 +49,12 @@
             "name": null,
             "owner": "DanielCardonaRojas",
             "repo": "codemark",
-            "rev": "0.7.25",
-            "sha256": "sha256-gX11XPwJEAqHe2Dyec1yAweO+s85tiE6v+9dkqFT3wc=",
+            "rev": "0.7.26",
+            "sha256": "sha256-V/rYr8+PvbUTxcG0HdBeYE81QvdMu/5FgTRAS/A2OMw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0.7.25"
+        "version": "0.7.26"
     },
     "dskditto": {
         "cargoLock": null,
@@ -390,6 +390,27 @@
             "type": "github"
         },
         "version": "v0.3.0"
+    },
+    "sot": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "sot",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "anistark",
+            "repo": "sot",
+            "rev": "v6.0.1",
+            "sha256": "sha256-fYbaFTVxFu+MoA9ggCjc0S962BENH8nu0X65uQn0DWo=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v6.0.1"
     },
     "usbtree": {
         "cargoLock": null,

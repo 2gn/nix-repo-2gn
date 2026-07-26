@@ -2,10 +2,10 @@
 
 # Step 0: Determine project language
 
-Query the GitHub languages API to detect the primary language:
+Query the GitHub languages API to detect the primary language (use `gh api` to avoid rate limiting):
 
 ```
-curl -s https://api.github.com/repos/owner/repo/languages | jq -r 'to_entries | max_by(.value) | .key'
+gh api repos/owner/repo/languages --jq 'to_entries | max_by(.value) | .key'
 ```
 
 The result maps to these templates:
@@ -23,7 +23,7 @@ nix search nixpkgs <package_name/repo_name>
 Check if the repo has GitHub releases:
 
 ```
-curl -s "https://api.github.com/repos/owner/repo/releases" | jq -r 'if length == 0 then "no releases" else "has releases" end'
+gh api repos/owner/repo/releases --jq 'if length == 0 then "no releases" else "has releases" end'
 ```
 
 If releases exist, inspect the first release's assets for platform-specific naming (e.g. `*-x86_64-unknown-linux-gnu.tar.gz`, `*_linux_amd64.tar.gz`). That signals a **pre-built binary** — skip source builds.
@@ -33,6 +33,8 @@ Check if it has flake.nix (200 if found, 404 when not found):
 ```
 curl -I https://raw.githubusercontent.com/owner/repo/HEAD/flake.nix
 ```
+
+If the repo has its own `flake.nix` (HTTP 200), skip this repo — the project already provides its own Nix packaging. Inform the user they can use the upstream flake directly. Do not add it to this repo.
 
 # Step 1: Update nvfetcher.toml
 
@@ -46,8 +48,10 @@ fetch.github = "owner/newpkg"
 
 # Step 2: Run nvfetcher
 
+nvfetcher uses the `GITHUB_TOKEN` environment variable to authenticate API calls. Pass your GitHub token to avoid rate limiting:
+
 ```
-nix run nixpkgs#nvfetcher
+GITHUB_TOKEN=$(gh auth token) nix run nixpkgs#nvfetcher
 ```
 
 This generates `_sources/generated.nix` with `pname`, `version`, and `src` for the new entry.
@@ -252,7 +256,21 @@ If a cargo lock file was generated, also add it:
 git add _sources/<pkgname>-cargo.lock
 ```
 
-# Step 5: Test build
+# Step 5: Verify the file is tracked in git
+
+The flake uses `packagesFromDirectoryRecursive` which reads from the git tree. New files that are untracked or unstaged will be invisible to the build. Confirm the package file is staged:
+
+```
+git status pkgs/newpkg.nix
+```
+
+If it shows as `Untracked` or `Changes not staged`, add it:
+
+```
+git add pkgs/newpkg.nix
+```
+
+# Step 6: Test build
 
 ```
 nix build .#newpkg

@@ -27,13 +27,13 @@
   };
   codemark = {
     pname = "codemark";
-    version = "0.7.25";
+    version = "0.7.26";
     src = fetchFromGitHub {
       owner = "DanielCardonaRojas";
       repo = "codemark";
-      rev = "0.7.25";
+      rev = "0.7.26";
       fetchSubmodules = false;
-      sha256 = "sha256-gX11XPwJEAqHe2Dyec1yAweO+s85tiE6v+9dkqFT3wc=";
+      sha256 = "sha256-V/rYr8+PvbUTxcG0HdBeYE81QvdMu/5FgTRAS/A2OMw=";
     };
   };
   dskditto = {
@@ -213,6 +213,17 @@
       rev = "v0.3.0";
       fetchSubmodules = false;
       sha256 = "sha256-xDu+jbWH7ubXC6ImvkRVgPI0OHAaUQ60sELDJN8hY1M=";
+    };
+  };
+  sot = {
+    pname = "sot";
+    version = "v6.0.1";
+    src = fetchFromGitHub {
+      owner = "anistark";
+      repo = "sot";
+      rev = "v6.0.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-fYbaFTVxFu+MoA9ggCjc0S962BENH8nu0X65uQn0DWo=";
     };
   };
   usbtree = {
