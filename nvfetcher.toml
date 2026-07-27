@@ -59,10 +59,6 @@ src.git = "https://github.com/B33pBeeps/redthread"
 src.branch = "main"
 fetch.git = "https://github.com/B33pBeeps/redthread"
 
-[bbcli]
-src.github = "hako/bbcli"
-fetch.github = "hako/bbcli"
-
 [rura]
 src.github = "tlipinski/rura"
 fetch.github = "tlipinski/rura"
