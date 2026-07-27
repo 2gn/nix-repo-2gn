@@ -23,4 +23,9 @@ jobs:
           pushFilter: ""
 
       - name: Build all packages
-        run: nix build -L .#packages.x86_64-linux --accept-flake-config
+        run: |
+          nix eval '.#packages.x86_64-linux' --apply 'builtins.attrNames' --json \
+            | jq -r '.[]' \
+            | while read -r pkg; do
+                nix build -L ".#$pkg" --accept-flake-config
+              done
