@@ -1,4 +1,4 @@
-name: "Nix Build & Cache"
+name: "NixOS CI Build"
 on:
   push:
     branches: [ "main" ]
@@ -9,23 +9,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Nix
-        uses: cachix/install-nix-action@v30
+      - uses: cachix/install-nix-action@v2
         with:
           extra_nix_config: |
             experimental-features = nix-command flakes
 
-      - name: Setup Cachix
-        uses: cachix/cachix-action@v15
+      - uses: cachix/cachix-action@v15
         with:
           name: 2gn
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-          pushFilter: ""
 
-      - name: Build all packages
+      - name: Build NixOS Configuration
         run: |
-          nix eval '.#packages.x86_64-linux' --apply 'builtins.attrNames' --json \
-            | jq -r '.[]' \
-            | while read -r pkg; do
-                nix build -L ".#$pkg" --accept-flake-config
-              done
+          nix build .
