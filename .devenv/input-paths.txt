@@ -1,0 +1,9 @@
+/home/htnk/Developments/github.com/2gn/nix-repo-2gn/.devenv/bootstrap/bootstrapLib.nix
+/home/htnk/Developments/github.com/2gn/nix-repo-2gn/.devenv/bootstrap/default.nix
+/home/htnk/Developments/github.com/2gn/nix-repo-2gn/.devenv/bootstrap/resolve-lock.nix
+/home/htnk/Developments/github.com/2gn/nix-repo-2gn/devenv.local.nix
+/home/htnk/Developments/github.com/2gn/nix-repo-2gn/devenv.lock
+/home/htnk/Developments/github.com/2gn/nix-repo-2gn/devenv.nix
+/home/htnk/.config/nixpkgs/overlays
+/home/htnk/.config/nixpkgs/overlays.nix
+/home/htnk/Developments/github.com/2gn/nix-repo-2gn/.env

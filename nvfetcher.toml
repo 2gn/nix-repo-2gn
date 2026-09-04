@@ -42,10 +42,6 @@ fetch.github = "trueroad/HaranoAjiFonts"
 src.github_tag = "herald-email/herald-mail-app"
 fetch.github = "herald-email/herald-mail-app"
 
-[resterm]
-src.github = "unkn0wn-root/resterm"
-fetch.github = "unkn0wn-root/resterm"
-
 [astroterm]
 src.github = "da-luce/astroterm"
 fetch.url = "https://github.com/da-luce/astroterm/releases/download/$ver/astroterm-linux-x86_64"
@@ -79,9 +75,9 @@ fetch.github = "orhun/flawz"
 src.github_tag = "octo/liboping"
 fetch.github = "octo/liboping"
 
-[manly]
-src.github_tag = "whoop-t/manly"
-fetch.github = "whoop-t/manly"
+# [manly]
+# src.github_tag = "whoop-t/manly"
+# fetch.github = "whoop-t/manly"
 
 [bottom]
 src.github = "ClementTsang/bottom"
@@ -106,3 +102,41 @@ fetch.github = "anistark/sot"
 [pwdsafety]
 src.github = "edoardottt/pwdsafety"
 fetch.github = "edoardottt/pwdsafety"
+
+[podliner]
+src.github = "timkicker/podliner"
+fetch.github = "timkicker/podliner"
+
+[superseedr]
+src.github = "Jagalite/superseedr"
+fetch.github = "Jagalite/superseedr"
+
+[glab-tui]
+src.github = "rcieri/glab-tui"
+fetch.github = "rcieri/glab-tui"
+
+
+[wacli]
+src.github = "openclaw/wacli"
+fetch.github = "openclaw/wacli"
+
+[wstui]
+src.github_tag = "NullSeile/wstui"
+fetch.github = "NullSeile/wstui"
+
+[tickrs]
+src.github_tag = "tarkah/tickrs"
+fetch.github = "tarkah/tickrs"
+
+[watui]
+src.github = "Guistoff081/watui"
+fetch.github = "Guistoff081/watui"
+
+[drydock]
+src.github = "yetidevworks/drydock"
+fetch.github = "yetidevworks/drydock"
+
+[linecast]
+src.github = "ashuttl/linecast"
+fetch.github = "ashuttl/linecast"
+

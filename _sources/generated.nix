@@ -14,59 +14,92 @@
       sha256 = "sha256-V6VCvTfQEzel39hYIBWnbJlJwKUU5LkzXgwapERFs98=";
     };
   };
-  bbcli = {
-    pname = "bbcli";
-    version = "1.0.3";
+  bottom = {
+    pname = "bottom";
+    version = "0.14.9";
     src = fetchFromGitHub {
-      owner = "hako";
-      repo = "bbcli";
-      rev = "1.0.3";
+      owner = "ClementTsang";
+      repo = "bottom";
+      rev = "0.14.9";
       fetchSubmodules = false;
-      sha256 = "sha256-b5wM18765fe9unz3v1uzTbSFOsvjNq5aIqhtrzz98mg=";
+      sha256 = "sha256-Dvo3A8NIYp0URgYSJOxLW/zEA7Gnpqu9pk6hvpagFZE=";
     };
   };
   codemark = {
     pname = "codemark";
-    version = "0.7.26";
+    version = "0.7.30";
     src = fetchFromGitHub {
       owner = "DanielCardonaRojas";
       repo = "codemark";
-      rev = "0.7.26";
+      rev = "0.7.30";
       fetchSubmodules = false;
-      sha256 = "sha256-V/rYr8+PvbUTxcG0HdBeYE81QvdMu/5FgTRAS/A2OMw=";
+      sha256 = "sha256-W86rJXoWDtdhIkH4lSX9y+70L1sKJ1pvqDAg6j3XV08=";
+    };
+  };
+  drydock = {
+    pname = "drydock";
+    version = "v1.1.2";
+    src = fetchFromGitHub {
+      owner = "yetidevworks";
+      repo = "drydock";
+      rev = "v1.1.2";
+      fetchSubmodules = false;
+      sha256 = "sha256-0PcuVWMJcgRkzNiuOdbPsqP1hlPKV8lhkWZa/raCgBY=";
     };
   };
   dskditto = {
     pname = "dskditto";
-    version = "v0.5.9";
+    version = "v0.6.2";
     src = fetchFromGitHub {
       owner = "jdefrancesco";
       repo = "dskDitto";
-      rev = "v0.5.9";
+      rev = "v0.6.2";
       fetchSubmodules = false;
-      sha256 = "sha256-BsVcxGnFVa10OcybdhC6u9EkGwumejeddaymXNivmbg=";
+      sha256 = "sha256-ILxxanmnJoDVh9PqSM/v6owu1JPcJ1U9RUN65F46K/0=";
+    };
+  };
+  flawz = {
+    pname = "flawz";
+    version = "v0.4.1";
+    src = fetchFromGitHub {
+      owner = "orhun";
+      repo = "flawz";
+      rev = "v0.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-a+UfWoBQP54/Vj5VJ9eMKcG+wQxXtd1bXii281SwjHo=";
     };
   };
   flow = {
     pname = "flow";
-    version = "v0.2.1";
+    version = "v0.2.5";
     src = fetchFromGitHub {
       owner = "programmersd21";
       repo = "flow";
-      rev = "v0.2.1";
+      rev = "v0.2.5";
       fetchSubmodules = false;
-      sha256 = "sha256-ZwWuFAPPHF+Q2ziXoT7yCPU6WVkAcbpnlZjXKQ/bqy0=";
+      sha256 = "sha256-V3OPABvWcul5wZEbyyfFnYZxDCfVy4ugye1yntpH1hU=";
     };
   };
   flyline = {
     pname = "flyline";
-    version = "v1.3.0";
+    version = "v1.7.1";
     src = fetchFromGitHub {
       owner = "HalFrgrd";
       repo = "flyline";
-      rev = "v1.3.0";
+      rev = "v1.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-KciBcUsoMCGuw8bHlVBDHAB55lDfyeGoJxBldmj0MVs=";
+      sha256 = "sha256-MscTAE921ymn0qyL3YQ06P3+AGg23c//6rh7+c+Iv4Y=";
+    };
+  };
+  glab-tui = {
+    pname = "glab-tui";
+    version = "v0.9.0";
+    src = fetchFromGitHub {
+      owner = "rcieri";
+      repo = "glab-tui";
+      rev = "v0.9.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-3Zke2A9OcnZxaFBE/u6GJ73TTAVWV8TakIwnRo6V4+Q=";
     };
   };
   gotz = {
@@ -102,15 +135,26 @@
       sha256 = "sha256-O24TgRxiIxTXXyCs7H2VU6C5ZYNowZMBK0KYlPs6IWc=";
     };
   };
+  hulak = {
+    pname = "hulak";
+    version = "v0.3.33";
+    src = fetchFromGitHub {
+      owner = "xaaha";
+      repo = "hulak";
+      rev = "v0.3.33";
+      fetchSubmodules = false;
+      sha256 = "sha256-gkvoi+ZXM5N0odCQJ2cb4WqFYijBFfgwW6KxMYiHHVg=";
+    };
+  };
   keyward = {
     pname = "keyward";
-    version = "v1.0.1";
+    version = "v1.0.3";
     src = fetchFromGitHub {
       owner = "gateway-of-last-resort";
       repo = "keyward";
-      rev = "v1.0.1";
+      rev = "v1.0.3";
       fetchSubmodules = false;
-      sha256 = "sha256-oHJ4dh5H3xjdKH0NsOry9TSzuURM9R80hw+AKZWfwMc=";
+      sha256 = "sha256-VEpZnjwAQCSm2UnviaG4CBjLq7WqSIYX8jauTrLlaMk=";
     };
   };
   lazycut = {
@@ -126,13 +170,35 @@
   };
   lazyrsync = {
     pname = "lazyrsync";
-    version = "v0.1.1";
+    version = "v0.3.0";
     src = fetchFromGitHub {
       owner = "westpoint-io";
       repo = "lazyrsync";
-      rev = "v0.1.1";
+      rev = "v0.3.0";
       fetchSubmodules = false;
-      sha256 = "sha256-JBELPmNSaiwxHq9iZHvvrCX/YLSBsOO3OrzXJ0mPrNw=";
+      sha256 = "sha256-cM6FBNXSDOcPkAxf8gNtjaHl1mR7tH383zFIQlPj+GE=";
+    };
+  };
+  liboping = {
+    pname = "liboping";
+    version = "Net-Oping-1.10";
+    src = fetchFromGitHub {
+      owner = "octo";
+      repo = "liboping";
+      rev = "Net-Oping-1.10";
+      fetchSubmodules = false;
+      sha256 = "sha256-Uazm3wWx0DDw08sgEXriQpiF1Ja/oIzzZTMeU7RgAg4=";
+    };
+  };
+  linecast = {
+    pname = "linecast";
+    version = "v2.3.1";
+    src = fetchFromGitHub {
+      owner = "ashuttl";
+      repo = "linecast";
+      rev = "v2.3.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-m7SyK2io1igLOHEzQN7nargkX91SKdplwHN+BkVenUo=";
     };
   };
   livediff = {
@@ -146,6 +212,17 @@
       sha256 = "sha256-KVxAGNam4S9ctwbvUR8eKzzFIDL7KPi+EmzZt0hrJuc=";
     };
   };
+  mtr = {
+    pname = "mtr";
+    version = "v0.96";
+    src = fetchFromGitHub {
+      owner = "traviscross";
+      repo = "mtr";
+      rev = "v0.96";
+      fetchSubmodules = false;
+      sha256 = "sha256-Oit0jEm1g+jYCIoTak/mcdlF14GDkDOAWKmX2mYw30M=";
+    };
+  };
   omm = {
     pname = "omm";
     version = "v0.7.0";
@@ -155,6 +232,17 @@
       rev = "v0.7.0";
       fetchSubmodules = false;
       sha256 = "sha256-aKsJWBZniUBPQaQOrTZtHePapKSAOiVwlmHhJQ1SHb8=";
+    };
+  };
+  podliner = {
+    pname = "podliner";
+    version = "v1.3.1";
+    src = fetchFromGitHub {
+      owner = "timkicker";
+      repo = "podliner";
+      rev = "v1.3.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-SMqWGIt8WhOM+BKvMvZnfD+Bm2b111y4vKCmQYOQS/E=";
     };
   };
   pwdsafety = {
@@ -182,26 +270,15 @@
     };
     date = "2026-06-17";
   };
-  resterm = {
-    pname = "resterm";
-    version = "v0.47.3";
-    src = fetchFromGitHub {
-      owner = "unkn0wn-root";
-      repo = "resterm";
-      rev = "v0.47.3";
-      fetchSubmodules = false;
-      sha256 = "sha256-MV5b2IS1j9BZ6dOkXSu0/n9LiQfGSSsz4b2QXdkUWh4=";
-    };
-  };
   rura = {
     pname = "rura";
-    version = "v1.10.0";
+    version = "v1.13.0";
     src = fetchFromGitHub {
       owner = "tlipinski";
       repo = "rura";
-      rev = "v1.10.0";
+      rev = "v1.13.0";
       fetchSubmodules = false;
-      sha256 = "sha256-yxYTBXGFX2PdtzgYexnXyjNMcDTnfwsy2s8S0y4hp+M=";
+      sha256 = "sha256-4uq2lD0fMGpWTFlhtIU4Q73Hg/gyg0ClIa3UOJgSps4=";
     };
   };
   sheets = {
@@ -217,24 +294,90 @@
   };
   sot = {
     pname = "sot";
-    version = "v6.0.1";
+    version = "v6.1.0";
     src = fetchFromGitHub {
       owner = "anistark";
       repo = "sot";
-      rev = "v6.0.1";
+      rev = "v6.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-fYbaFTVxFu+MoA9ggCjc0S962BENH8nu0X65uQn0DWo=";
+      sha256 = "sha256-qSUrU41Gef9Ufnh1CczBsrKDBAnEwdyFyN5jlG9O7lQ=";
+    };
+  };
+  superseedr = {
+    pname = "superseedr";
+    version = "v1.0.14";
+    src = fetchFromGitHub {
+      owner = "Jagalite";
+      repo = "superseedr";
+      rev = "v1.0.14";
+      fetchSubmodules = false;
+      sha256 = "sha256-RCPz4ugU7V5B6jl0wUg/mPxvoUX/TF0RM18tT0caTIM=";
+    };
+  };
+  tickrs = {
+    pname = "tickrs";
+    version = "v0.15.0";
+    src = fetchFromGitHub {
+      owner = "tarkah";
+      repo = "tickrs";
+      rev = "v0.15.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-JqX+PEob99O1VRYbw7RH6KGA1CXYyepkM9Uc5jkWlrM=";
     };
   };
   usbtree = {
     pname = "usbtree";
-    version = "v0.1.0";
+    version = "v0.1.1";
     src = fetchFromGitHub {
       owner = "gnomeria";
       repo = "usbtree";
-      rev = "v0.1.0";
+      rev = "v0.1.1";
       fetchSubmodules = false;
-      sha256 = "sha256-52Ppiv2bYLJR4/h0gyxfBtRnyCQkfNBmCNyr5hWe3uY=";
+      sha256 = "sha256-780SdrC2vaLQKJElabevYifBSv1WUOwjqYfbj7Fsm3E=";
+    };
+  };
+  uuinfo = {
+    pname = "uuinfo";
+    version = "v0.7.5";
+    src = fetchFromGitHub {
+      owner = "Racum";
+      repo = "uuinfo";
+      rev = "v0.7.5";
+      fetchSubmodules = false;
+      sha256 = "sha256-OUR5siS6uQcZL1HyJVdAB5WZ86jf8eVj22N6UJtx8oc=";
+    };
+  };
+  wacli = {
+    pname = "wacli";
+    version = "v0.17.1";
+    src = fetchFromGitHub {
+      owner = "openclaw";
+      repo = "wacli";
+      rev = "v0.17.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-i7hZxLQkde4fzoFS7977gLFxoCsAVnmgdyqtBITHTxM=";
+    };
+  };
+  watui = {
+    pname = "watui";
+    version = "v0.2.1";
+    src = fetchFromGitHub {
+      owner = "Guistoff081";
+      repo = "watui";
+      rev = "v0.2.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-D0ApeRX8yHU9pkQqwEoZI6bqlzyaMfQqGxt8abqXad8=";
+    };
+  };
+  wstui = {
+    pname = "wstui";
+    version = "v0.0.1alpha1";
+    src = fetchFromGitHub {
+      owner = "NullSeile";
+      repo = "wstui";
+      rev = "v0.0.1alpha1";
+      fetchSubmodules = false;
+      sha256 = "sha256-/dUU0pug9McJABPZI4ilQlgjg9ZzC4iJziGwQI9cBH4=";
     };
   };
 }

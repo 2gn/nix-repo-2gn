@@ -21,6 +21,16 @@
               inherit callPackage;
               directory = ./pkgs;
             };
+        devShells.default = {
+          commands = [
+            {
+              addnvdef = "./scripts/addnvdef.sh"  ;
+            }
+          ];
+          packages = with pkgs; [
+            nvfetcher
+          ];
+        };
       };
     };
 }
