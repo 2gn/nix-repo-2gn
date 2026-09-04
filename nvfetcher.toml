@@ -75,10 +75,6 @@ fetch.github = "orhun/flawz"
 src.github_tag = "octo/liboping"
 fetch.github = "octo/liboping"
 
-# [manly]
-# src.github_tag = "whoop-t/manly"
-# fetch.github = "whoop-t/manly"
-
 [bottom]
 src.github = "ClementTsang/bottom"
 fetch.github = "ClementTsang/bottom"
