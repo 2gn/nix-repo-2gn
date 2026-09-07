@@ -23,9 +23,9 @@
             };
         devShells.default = {
           commands = [
-            {
-              addnvdef = "./scripts/addnvdef.sh"  ;
-            }
+            # {
+            #   addnvdef = "./scripts/addnvdef.sh"  ;
+            # }
           ];
           packages = with pkgs; [
             nvfetcher

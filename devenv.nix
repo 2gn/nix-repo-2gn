@@ -1,3 +1,3 @@
 {
-  cachix.push = [ "2gn" ];
+  cachix.push = "2gn";
 }

@@ -1,5 +1,14 @@
 # devenv zsh init - restore ZDOTDIR and source user's .zshrc
 
+# Remember whether this shell was spawned by the devenv hook, then unset the
+# exported marker immediately so it cannot leak into further descendants.
+# The cd-out handler itself is installed after the user's zsh configuration
+# below, so their precmd hook setup cannot discard it.
+if [ -n "$_DEVENV_HOOK_DIR" ]; then
+    unset _DEVENV_HOOK_DIR
+    __devenv_enable_exit_on_cd_out=1
+fi
+
 if [ -n "$_DEVENV_REAL_ZDOTDIR" ]; then
     ZDOTDIR="$_DEVENV_REAL_ZDOTDIR"
     unset _DEVENV_REAL_ZDOTDIR
@@ -14,6 +23,24 @@ fi
 # Restore devenv PATH after user's .zshrc may have modified it
 export PATH="$_DEVENV_PATH"
 
+# A hook-spawned shell must exit when the user leaves the project so its
+# parent shell can follow. Install this after the user's zsh configuration so
+# their precmd hook setup cannot discard the handler.
+if [ -n "$__devenv_enable_exit_on_cd_out" ]; then
+    __devenv_exit_on_cd_out() {
+        case "$PWD" in
+            "$DEVENV_ROOT"|"$DEVENV_ROOT"/*) ;;
+            *)
+                printf '%s' "$PWD" > "$DEVENV_ROOT/.devenv/exit-dir"
+                exit
+                ;;
+        esac
+    }
+    autoload -Uz add-zsh-hook
+    add-zsh-hook precmd __devenv_exit_on_cd_out
+    unset __devenv_enable_exit_on_cd_out
+fi
+
 # Set devenv prompt prefix
 PROMPT="(devenv) ${PROMPT}"
 
@@ -23,7 +50,7 @@ autoload -Uz add-zsh-hook
 
 __devenv_reload_apply() {
     # Source new environment if a reload is pending
-    if [ -f "/tmp/devenv-reload-3071339.sh" ]; then
+    if [ -f "/tmp/devenv-reload-1107681.sh" ]; then
         # Shell out to bash to handle the env diff (bash syntax)
         local reload_output
         reload_output=$(bash -c '
@@ -157,9 +184,19 @@ __devenv_apply_reverse_diff
 _before=$(mktemp)
 __devenv_capture_env > "$_before"
 
+# Send enterShell output to the terminal instead of the captured stdout.
+# Probe by actually opening /dev/tty: it can exist with writable permission
+# bits yet fail to open (ENXIO) when there is no controlling terminal.
+if { : >/dev/tty; } 2>/dev/null; then
+    _devenv_reload_out=/dev/tty
+else
+    _devenv_reload_out=/dev/null
+fi
+
 # Source new devenv environment
-source "/tmp/devenv-reload-3071339.sh"
-rm -f "/tmp/devenv-reload-3071339.sh"
+source "/tmp/devenv-reload-1107681.sh" >"$_devenv_reload_out" 2>"$_devenv_reload_out"
+rm -f "/tmp/devenv-reload-1107681.sh"
+unset _devenv_reload_out
 
 # Compute new diff
 __devenv_compute_diff "$_before"
