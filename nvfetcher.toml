@@ -26,10 +26,6 @@ fetch.github = "gateway-of-last-resort/keyward"
 src.github = "DanielCardonaRojas/codemark"
 fetch.github = "DanielCardonaRojas/codemark"
 
-[livediff]
-src.github = "SoCkEt7/livediff"
-fetch.github = "SoCkEt7/livediff"
-
 [gotz]
 src.github = "merschformann/gotz"
 fetch.github = "merschformann/gotz"

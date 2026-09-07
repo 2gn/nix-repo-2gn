@@ -93,13 +93,13 @@
   };
   glab-tui = {
     pname = "glab-tui";
-    version = "v0.9.0";
+    version = "v0.9.1";
     src = fetchFromGitHub {
       owner = "rcieri";
       repo = "glab-tui";
-      rev = "v0.9.0";
+      rev = "v0.9.1";
       fetchSubmodules = false;
-      sha256 = "sha256-3Zke2A9OcnZxaFBE/u6GJ73TTAVWV8TakIwnRo6V4+Q=";
+      sha256 = "sha256-F8uBKQSSOMCWc2zahFbOdLculEJ4g80kLVj9y0JrPOM=";
     };
   };
   gotz = {
@@ -192,24 +192,13 @@
   };
   linecast = {
     pname = "linecast";
-    version = "v2.3.1";
+    version = "v2.3.3";
     src = fetchFromGitHub {
       owner = "ashuttl";
       repo = "linecast";
-      rev = "v2.3.1";
+      rev = "v2.3.3";
       fetchSubmodules = false;
-      sha256 = "sha256-m7SyK2io1igLOHEzQN7nargkX91SKdplwHN+BkVenUo=";
-    };
-  };
-  livediff = {
-    pname = "livediff";
-    version = "v3.2.0";
-    src = fetchFromGitHub {
-      owner = "SoCkEt7";
-      repo = "livediff";
-      rev = "v3.2.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-KVxAGNam4S9ctwbvUR8eKzzFIDL7KPi+EmzZt0hrJuc=";
+      sha256 = "sha256-4ddHtUpmRw/ed56WwjTrZL/3W6sKqUYbzAN3lL7XAy8=";
     };
   };
   mtr = {
@@ -349,13 +338,13 @@
   };
   wacli = {
     pname = "wacli";
-    version = "v0.17.1";
+    version = "v0.18.0";
     src = fetchFromGitHub {
       owner = "openclaw";
       repo = "wacli";
-      rev = "v0.17.1";
+      rev = "v0.18.0";
       fetchSubmodules = false;
-      sha256 = "sha256-i7hZxLQkde4fzoFS7977gLFxoCsAVnmgdyqtBITHTxM=";
+      sha256 = "sha256-emt5b1GSMlKdULj5TWQkOaSJ3YkiB7QjaMb48Pay0O8=";
     };
   };
   watui = {
