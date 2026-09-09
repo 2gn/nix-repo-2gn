@@ -36,26 +36,37 @@
       sha256 = "sha256-W86rJXoWDtdhIkH4lSX9y+70L1sKJ1pvqDAg6j3XV08=";
     };
   };
+  countryfetch = {
+    pname = "countryfetch";
+    version = "v0.2.0";
+    src = fetchFromGitHub {
+      owner = "nik-rev";
+      repo = "countryfetch";
+      rev = "v0.2.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-povKd1Y/2Mi+6yJd9+RsJ4F19/wvXvBOK2Jgbs4UnP0=";
+    };
+  };
   drydock = {
     pname = "drydock";
-    version = "v1.1.2";
+    version = "v1.1.3";
     src = fetchFromGitHub {
       owner = "yetidevworks";
       repo = "drydock";
-      rev = "v1.1.2";
+      rev = "v1.1.3";
       fetchSubmodules = false;
-      sha256 = "sha256-0PcuVWMJcgRkzNiuOdbPsqP1hlPKV8lhkWZa/raCgBY=";
+      sha256 = "sha256-8hLLfsC/JHGTznvKWVQsiY5tltSPPsTc5/TTJDpLx+M=";
     };
   };
   dskditto = {
     pname = "dskditto";
-    version = "v0.6.2";
+    version = "v0.6.3";
     src = fetchFromGitHub {
       owner = "jdefrancesco";
       repo = "dskDitto";
-      rev = "v0.6.2";
+      rev = "v0.6.3";
       fetchSubmodules = false;
-      sha256 = "sha256-ILxxanmnJoDVh9PqSM/v6owu1JPcJ1U9RUN65F46K/0=";
+      sha256 = "sha256-reTLIxxSoCTsTRqHG/1BVWC/K+7/+PpmPLqg3EGcRO0=";
     };
   };
   flawz = {
@@ -82,13 +93,13 @@
   };
   flyline = {
     pname = "flyline";
-    version = "v1.7.1";
+    version = "v1.8.0";
     src = fetchFromGitHub {
       owner = "HalFrgrd";
       repo = "flyline";
-      rev = "v1.7.1";
+      rev = "v1.8.0";
       fetchSubmodules = false;
-      sha256 = "sha256-MscTAE921ymn0qyL3YQ06P3+AGg23c//6rh7+c+Iv4Y=";
+      sha256 = "sha256-gmkp9gxI5xcU0n2rCc1TBh7C+cWi0GwIUyP7C+xKuA4=";
     };
   };
   glab-tui = {
@@ -338,13 +349,13 @@
   };
   wacli = {
     pname = "wacli";
-    version = "v0.18.0";
+    version = "v0.18.1";
     src = fetchFromGitHub {
       owner = "openclaw";
       repo = "wacli";
-      rev = "v0.18.0";
+      rev = "v0.18.1";
       fetchSubmodules = false;
-      sha256 = "sha256-emt5b1GSMlKdULj5TWQkOaSJ3YkiB7QjaMb48Pay0O8=";
+      sha256 = "sha256-wWTrU7aIIwKvPPaCjO7A+x3FIF7oMYhQoefU5CGlhGo=";
     };
   };
   watui = {

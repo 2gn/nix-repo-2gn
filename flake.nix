@@ -21,12 +21,7 @@
               inherit callPackage;
               directory = ./pkgs;
             };
-        devShells.default = {
-          commands = [
-            # {
-            #   addnvdef = "./scripts/addnvdef.sh"  ;
-            # }
-          ];
+        devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             nvfetcher
           ];

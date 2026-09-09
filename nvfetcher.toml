@@ -132,3 +132,7 @@ fetch.github = "yetidevworks/drydock"
 src.github = "ashuttl/linecast"
 fetch.github = "ashuttl/linecast"
 
+[countryfetch]
+src.github = "nik-rev/countryfetch"
+fetch.github = "nik-rev/countryfetch"
+
