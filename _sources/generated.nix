@@ -6,6 +6,17 @@
   dockerTools,
 }:
 {
+  act3 = {
+    pname = "act3";
+    version = "v2.0.0";
+    src = fetchFromGitHub {
+      owner = "dhth";
+      repo = "act3";
+      rev = "v2.0.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-GE9f4hm+R4G4NCqdPN6h5MTZqMVLkrdMnc20bOZGcu4=";
+    };
+  };
   astroterm = {
     pname = "astroterm";
     version = "v1.2.0";
