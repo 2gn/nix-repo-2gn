@@ -11,17 +11,19 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
 
-      perSystem = { pkgs, system, ... }: {
-
+      flake = {
         overlays.default = final: prev:
           let
-            craneLib = inputs.crane.mkLib pkgs;
-            callPackage = pkgs.lib.callPackageWith (pkgs // {inherit craneLib; });
+            craneLib = inputs.crane.mkLib final;
+            callPackage = final.lib.callPackageWith (final // {inherit craneLib; });
           in
-            pkgs.lib.filesystem.packagesFromDirectoryRecursive {
+            final.lib.filesystem.packagesFromDirectoryRecursive {
               inherit callPackage;
               directory = ./pkgs;
             };
+      };
+
+      perSystem = { pkgs, system, ... }: {
         
         packages = self.overlays.default pkgs pkgs;
 
