@@ -23,15 +23,21 @@
             };
       };
 
-      perSystem = { pkgs, system, ... }: {
-        
-        packages = self.overlays.default pkgs pkgs;
-
-        devShells.default = pkgs.mkShell {
-          packages = with pkgs; [
-            nvfetcher
-          ];
+      perSystem = { pkgs, system, ... }: 
+        let
+          craneLib = inputs.crane.mkLib pkgs;
+          callPackage = pkgs.lib.callPackageWith (pkgs // {inherit craneLib; });
+        in
+        {
+          packages = pkgs.lib.filesystem.packagesFromDirectoryRecursive {
+            inherit callPackage;
+            directory = ./.pkgs;
+          };
+          devShells.default = pkgs.mkShell {
+            packages = with pkgs; [
+              nvfetcher
+            ];
+          };
         };
-      };
     };
 }
