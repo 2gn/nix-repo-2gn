@@ -60,24 +60,24 @@
   };
   drydock = {
     pname = "drydock";
-    version = "v1.1.3";
+    version = "v1.1.4";
     src = fetchFromGitHub {
       owner = "yetidevworks";
       repo = "drydock";
-      rev = "v1.1.3";
+      rev = "v1.1.4";
       fetchSubmodules = false;
-      sha256 = "sha256-8hLLfsC/JHGTznvKWVQsiY5tltSPPsTc5/TTJDpLx+M=";
+      sha256 = "sha256-23b8UEw8Lo9dj3JFKV36eXUhbzjfRRbXoe9xminIzVg=";
     };
   };
   dskditto = {
     pname = "dskditto";
-    version = "v0.6.3";
+    version = "v0.7.0";
     src = fetchFromGitHub {
       owner = "jdefrancesco";
       repo = "dskDitto";
-      rev = "v0.6.3";
+      rev = "v0.7.0";
       fetchSubmodules = false;
-      sha256 = "sha256-reTLIxxSoCTsTRqHG/1BVWC/K+7/+PpmPLqg3EGcRO0=";
+      sha256 = "sha256-2SNE+hFwGUBo3MUP7i4Wqydq2uIEJih9uZEZsZ7yw6w=";
     };
   };
   flawz = {
@@ -214,13 +214,13 @@
   };
   linecast = {
     pname = "linecast";
-    version = "v2.3.3";
+    version = "v2.4.0";
     src = fetchFromGitHub {
       owner = "ashuttl";
       repo = "linecast";
-      rev = "v2.3.3";
+      rev = "v2.4.0";
       fetchSubmodules = false;
-      sha256 = "sha256-4ddHtUpmRw/ed56WwjTrZL/3W6sKqUYbzAN3lL7XAy8=";
+      sha256 = "sha256-xVpycdBpcoZ0nYyAibSTpMl2hCTrLWFJd7zNiMbpqYg=";
     };
   };
   mtr = {
@@ -245,15 +245,26 @@
       sha256 = "sha256-aKsJWBZniUBPQaQOrTZtHePapKSAOiVwlmHhJQ1SHb8=";
     };
   };
+  oui = {
+    pname = "oui";
+    version = "v2.1.0";
+    src = fetchFromGitHub {
+      owner = "thatmattlove";
+      repo = "oui";
+      rev = "v2.1.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-8hzemGUeUU1QmXJogkr4LLpSgwt1BMqTNTft8PxwmDQ=";
+    };
+  };
   podliner = {
     pname = "podliner";
-    version = "v1.3.1";
+    version = "v2.0.0";
     src = fetchFromGitHub {
       owner = "timkicker";
       repo = "podliner";
-      rev = "v1.3.1";
+      rev = "v2.0.0";
       fetchSubmodules = false;
-      sha256 = "sha256-SMqWGIt8WhOM+BKvMvZnfD+Bm2b111y4vKCmQYOQS/E=";
+      sha256 = "sha256-s7eNuI3iKYyMJi09fLzg9f3y4w4bUlcusZul5GnBeM4=";
     };
   };
   pwdsafety = {
@@ -360,13 +371,13 @@
   };
   wacli = {
     pname = "wacli";
-    version = "v0.18.1";
+    version = "v0.18.2";
     src = fetchFromGitHub {
       owner = "openclaw";
       repo = "wacli";
-      rev = "v0.18.1";
+      rev = "v0.18.2";
       fetchSubmodules = false;
-      sha256 = "sha256-wWTrU7aIIwKvPPaCjO7A+x3FIF7oMYhQoefU5CGlhGo=";
+      sha256 = "sha256-1czf5PLIdp75P3OrZ5SD9PMeLo7t7MDB+kDvtKsoHZU=";
     };
   };
   watui = {

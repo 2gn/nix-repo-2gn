@@ -7,12 +7,13 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
-  outputs = inputs@{ flake-parts, ... }:
+  outputs = inputs@{ self, flake-parts, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
 
       perSystem = { pkgs, system, ... }: {
-        packages =
+
+        overlays.default = final: prev:
           let
             craneLib = inputs.crane.mkLib pkgs;
             callPackage = pkgs.lib.callPackageWith (pkgs // {inherit craneLib; });
@@ -21,6 +22,9 @@
               inherit callPackage;
               directory = ./pkgs;
             };
+        
+        packages = self.overlays.default pkgs pkgs;
+
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             nvfetcher

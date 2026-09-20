@@ -112,12 +112,12 @@
             "name": null,
             "owner": "yetidevworks",
             "repo": "drydock",
-            "rev": "v1.1.3",
-            "sha256": "sha256-8hLLfsC/JHGTznvKWVQsiY5tltSPPsTc5/TTJDpLx+M=",
+            "rev": "v1.1.4",
+            "sha256": "sha256-23b8UEw8Lo9dj3JFKV36eXUhbzjfRRbXoe9xminIzVg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.1.3"
+        "version": "v1.1.4"
     },
     "dskditto": {
         "cargoLock": null,
@@ -133,12 +133,12 @@
             "name": null,
             "owner": "jdefrancesco",
             "repo": "dskDitto",
-            "rev": "v0.6.3",
-            "sha256": "sha256-reTLIxxSoCTsTRqHG/1BVWC/K+7/+PpmPLqg3EGcRO0=",
+            "rev": "v0.7.0",
+            "sha256": "sha256-2SNE+hFwGUBo3MUP7i4Wqydq2uIEJih9uZEZsZ7yw6w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.6.3"
+        "version": "v0.7.0"
     },
     "flawz": {
         "cargoLock": null,
@@ -406,12 +406,12 @@
             "name": null,
             "owner": "ashuttl",
             "repo": "linecast",
-            "rev": "v2.3.3",
-            "sha256": "sha256-4ddHtUpmRw/ed56WwjTrZL/3W6sKqUYbzAN3lL7XAy8=",
+            "rev": "v2.4.0",
+            "sha256": "sha256-xVpycdBpcoZ0nYyAibSTpMl2hCTrLWFJd7zNiMbpqYg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v2.3.3"
+        "version": "v2.4.0"
     },
     "mtr": {
         "cargoLock": null,
@@ -455,6 +455,27 @@
         },
         "version": "v0.7.0"
     },
+    "oui": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "oui",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "thatmattlove",
+            "repo": "oui",
+            "rev": "v2.1.0",
+            "sha256": "sha256-8hzemGUeUU1QmXJogkr4LLpSgwt1BMqTNTft8PxwmDQ=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v2.1.0"
+    },
     "podliner": {
         "cargoLock": null,
         "date": null,
@@ -469,12 +490,12 @@
             "name": null,
             "owner": "timkicker",
             "repo": "podliner",
-            "rev": "v1.3.1",
-            "sha256": "sha256-SMqWGIt8WhOM+BKvMvZnfD+Bm2b111y4vKCmQYOQS/E=",
+            "rev": "v2.0.0",
+            "sha256": "sha256-s7eNuI3iKYyMJi09fLzg9f3y4w4bUlcusZul5GnBeM4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v1.3.1"
+        "version": "v2.0.0"
     },
     "pwdsafety": {
         "cargoLock": null,
@@ -678,12 +699,12 @@
             "name": null,
             "owner": "openclaw",
             "repo": "wacli",
-            "rev": "v0.18.1",
-            "sha256": "sha256-wWTrU7aIIwKvPPaCjO7A+x3FIF7oMYhQoefU5CGlhGo=",
+            "rev": "v0.18.2",
+            "sha256": "sha256-1czf5PLIdp75P3OrZ5SD9PMeLo7t7MDB+kDvtKsoHZU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "v0.18.1"
+        "version": "v0.18.2"
     },
     "watui": {
         "cargoLock": null,
