@@ -23,7 +23,7 @@
             };
       };
 
-      perSystem = { pkgs, system, ... }: 
+      perSystem = { pkgs, ... }: 
         let
           craneLib = inputs.crane.mkLib pkgs;
           callPackage = pkgs.lib.callPackageWith (pkgs // {inherit craneLib; });
@@ -31,7 +31,7 @@
         {
           packages = pkgs.lib.filesystem.packagesFromDirectoryRecursive {
             inherit callPackage;
-            directory = ./.pkgs;
+            directory = ./pkgs;
           };
           devShells.default = pkgs.mkShell {
             packages = with pkgs; [

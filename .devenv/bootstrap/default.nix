@@ -1,13 +1,16 @@
-args@{ system
-, # The project root (location of devenv.nix)
-  devenv_root
-, ...
+args@{
+  system,
+  # The project root (location of devenv.nix)
+  devenv_root,
+  devenv_lock,
+  ...
 }:
 
 let
   inherit
     (import ./resolve-lock.nix {
       src = devenv_root;
+      lockFilePath = devenv_lock;
       inherit system;
     })
     inputs
